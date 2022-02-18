@@ -3,3 +3,8 @@ body {
     background-color: aqua;
     align-content: center;
 }
+
+.Board img {
+        width: 500px;
+        border: 1px solid black;
+}
