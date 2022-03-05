@@ -12,11 +12,11 @@ function deckBuilder()
 {
     let deck = new Array();
     
-for(let s = 0; s < suits.length; s++) 
+for(let s = 0; s < suits.length - 1; s++) 
     {
-    for(let v = 0; v < values.length; v++) 
+    for(let v = 0; v < values.length - 1; v++) 
         {
-            let card = {Value: values[x], Suit: suits[i]};
+            let card = {Value: values[v], Suit: suits[s]};
             deck.push(card);
         }
     }

@@ -27,6 +27,9 @@ form {
     cursor:pointer;
 }
 
+.deckOne, .deckTwo {
+    background-color: aqua;
+}
 .number, #suit {
     width: 100%;
     display: block;

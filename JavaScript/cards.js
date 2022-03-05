@@ -6,7 +6,7 @@ function card(value, name, suit) {
 
 function deck() {
         this.names = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-        this.suits = ['Hearts', 'Spgit ades', 'Clubs', 'Diamonds'];
+        this.suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
         let cards = []; 
     
     for(let n = 0; n <this.names.length; n++) {
@@ -31,11 +31,11 @@ window.onload = function() {
         div.className = 'cards';
         
         if(myDeck[i].suit === 'Diamonds') {
-            let ascii_char = '&diams;';
+            let suits = '&diams;';
         } else {
-            let ascii_char = '&' + myDeck[i].suit.toLowerCase() + ';';
+            let value = '&' + myDeck[i].suit.toLowerCase() + ';';
         }
-        div.innerHTML = '.number' + myDeck[i].name + '.suit' + ascii_char + '';
+        div.innerHTML = '.number' + myDeck[i].name + '.suit' + deck + '';
         document.body.appendChild(div);
         }
     }
